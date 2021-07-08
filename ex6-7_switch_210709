@@ -1,0 +1,44 @@
+#define _CRT_SECURE_NO_WARNINGS 
+
+#include <stdio.h>
+
+int main(void)
+{
+	double x, y, result;
+    int op;
+    
+	printf("inout two integer: ");
+
+	scanf("%lf %lf", &x, &y); 
+    printf("type of operation choose number 1(+), 2(-), 3(*), 4(/): ");
+    scanf("%d", &op); 
+    
+    
+    switch (op) {
+    	
+    case 1:
+    	printf("%.2f + %.2f = %2.f \n", x,y, x+y);
+    break;
+    	
+    case 2:
+    	printf("%.2f - %.2f = %2.f \n", x,y, x-y);
+    break;  	
+    
+    case 3:
+    	printf("%.2f * %.2f = %2.f \n", x,y, x*y);
+    break;
+    
+    case 4:
+    	printf("%.2f / %.2f = %2.f \n", x,y, x/y);
+    break;
+    
+	
+    default:
+	
+	    printf("you choose wrong number. \n");
+	
+	
+   }
+return 0;
+
+}
