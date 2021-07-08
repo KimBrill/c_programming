@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void)
+{
+	double gpa;
+	
+	printf("avarage gpa input: ");
+	
+	scanf("%lf", &gpa); 
+	//질문 : double형은 scanf를 할 때, 왜 %lf를 해줘야 하고 printf를 할 때는 %f 로 해주어야 하나? pintf 는 포인터가 아닌 값을 받기 때문에 파라미터 리스트에서 각각의 데이터
+//
+
+	
+	if(gpa >= 4.3)
+	  printf("best student \n");
+	  
+	else if (gpa >=3.6)
+	  printf("good student \n");
+	else if (gpa >=3.3)
+	  printf("student \n");
+	else 
+	  printf("bad student \n");
+	  
+    return 0;
+	
+}
